@@ -1,0 +1,3 @@
+[submodule "react-redux-starter-template"]
+	path = react-redux-starter-template
+	url = https://github.com/jankidepala/react-redux-starter-template
