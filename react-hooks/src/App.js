@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+//import { Spinner } from "./components/Spinner";
+import { Starter } from "./components/Starter";
+
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+function App() {
+  const [courses] = useState([
+    {
+      "get": '---->Janki'
+    }
+  ])
+
+  return (
+    <div className="App">
+      <header>
+        Header 
         </header>
-      </div>
-    );
-  }
+        <hr></hr>
+        {<Starter />}
+      {/* {<Spinner courses={courses} />} */}
+     
+    </div>
+  );
 }
+
 
 export default App;
