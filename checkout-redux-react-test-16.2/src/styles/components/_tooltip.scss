@@ -1,0 +1,100 @@
+
+  
+  $tooltip-color: rgba(0,0,0,.7);
+  $tooltip-text-color: grey;
+  
+  .tooltip {
+    position: relative;
+  }
+  
+  .tooltip-trigger {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .tooltip-bubble {
+    min-width: 120px;
+    max-width: 210px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 10;
+    &::after {
+      content: '';
+      position: absolute;
+    }
+  }
+  
+  .tooltip-top {
+    margin-left: 9%;
+    margin-top: 28px;
+    transform: translateX(-50%);
+    border: 1px solid lightgrey;
+    
+    &::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid grey;
+        top: 0;
+        left: 47%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .tooltip-bottom {
+    top: 100%;
+    left: 50%;
+    padding-top: 9px;
+    transform: translateX(-50%);
+    
+    &::after {
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid $tooltip-color;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .tooltip-left {
+    top: 50%;
+    right: 100%;
+    padding-right: 9px;
+    transform: translateY(-50%);
+    
+    &::after {
+      border-left: 9px solid red($color: #000000);
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .tooltip-right {
+    top: 50%;
+    left: 100%;
+    padding-left: 9px;
+    transform: translateY(-50%);
+    
+    &::after {
+      border-right: 9px solid red($color: #000000);
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .tooltip-message {
+    background: red($color: #000000);
+    border-radius: 3px;
+    color: $tooltip-text-color;
+    font-size: .75rem;
+    line-height: 1;
+    padding: .75em;
+    text-align: left;
+  }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import { Spinner } from "./components/Spinner";
-import { UseEffect } from "./components/UseEffect";
+import { LocalStrorage } from "./components/LocalStrorage";
 
 import './App.css';
 
@@ -14,12 +14,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        Header 
+        Header
         </header>
-        <hr></hr>
-        {<UseEffect />}
+      <hr></hr>
+      {<LocalStrorage />}
       {/* {<Spinner courses={courses} />} */}
-     
+
     </div>
   );
 }
