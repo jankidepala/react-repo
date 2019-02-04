@@ -15,6 +15,8 @@ feature allows you to defer rendering part of your application tree until some c
 CUSTOM HOOKS -> Starts with use
 setSomething() - UI rerenders -> setState()
 
+USEEFFECT- handles lifecycle events directly inside function components. Namely, three of them: componentDidMount, componentDidUpdate, and componentWillUnmount
+
 ## Material-ui
 
 Typography -
