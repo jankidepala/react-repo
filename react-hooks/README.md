@@ -9,6 +9,12 @@ Context -
 useContext - that allows us to drastically simplify the above example, and when combined with useState, allows us to build the same component in a semantic manner:
       const {color, setColor} = useContext(ExampleContext);
 
+SUSPENSE ->
+feature allows you to defer rendering part of your application tree until some condition is met (for example data from an endpoint or a resource is loaded).
+
+CUSTOM HOOKS -> Starts with use
+setSomething() - UI rerenders -> setState()
+
 ## Material-ui
 
 Typography -

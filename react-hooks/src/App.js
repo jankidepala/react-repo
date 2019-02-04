@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import { Spinner } from "./components/Spinner";
-import { Starter } from "./components/Starter";
+import { Customhooks } from "./components/Custom_hooks";
 
 import './App.css';
 
@@ -17,7 +17,7 @@ function App() {
         Header 
         </header>
         <hr></hr>
-        {<Starter />}
+        {<Customhooks />}
       {/* {<Spinner courses={courses} />} */}
      
     </div>
