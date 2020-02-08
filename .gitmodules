@@ -1,3 +1,6 @@
 [submodule "react-redux-starter-template"]
 	path = react-redux-starter-template
 	url = https://github.com/jankidepala/react-redux-starter-template
+[submodule "todo-application-crud"]
+	path = todo-application-crud
+	url = https://github.com/jankidepala/todo-application-crud
